@@ -194,5 +194,31 @@
   ※最終的な投資判断は利用者自身が行ってください
 </footer>
 
+<script>
+fetch('data.json')
+  .then(response => response.json())
+  .then(data => {
+    const tbody = document.querySelector('.watchlist tbody');
+
+    tbody.innerHTML = '';
+
+    data.stocks.forEach((stock, index) => {
+      const row = document.createElement('tr');
+
+      row.innerHTML = `
+        <td>${index + 1}</td>
+        <td>${stock.symbol}</td>
+        <td>${stock.score}</td>
+        <td class="buy">${stock.rating}</td>
+      `;
+
+      tbody.appendChild(row);
+    });
+  })
+  .catch(error => {
+    console.error('データ読み込みエラー:', error);
+  });
+</script>
+  
 </body>
 </html>
