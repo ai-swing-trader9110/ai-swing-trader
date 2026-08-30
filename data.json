@@ -1,0 +1,21 @@
+{
+  "lastUpdated": "2026-08-30",
+  "marketTrend": "BULLISH",
+  "stocks": [
+    {
+      "symbol": "NVDA",
+      "score": 88,
+      "rating": "BUY候補"
+    },
+    {
+      "symbol": "MSFT",
+      "score": 82,
+      "rating": "BUY候補"
+    },
+    {
+      "symbol": "AMZN",
+      "score": 78,
+      "rating": "BUY候補"
+    }
+  ]
+}
