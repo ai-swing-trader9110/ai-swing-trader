@@ -14,100 +14,140 @@
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #0f172a;
-      color: white;
+      background: #0b1120;
+      color: #e5e7eb;
     }
 
     header {
-      background: #111827;
-      padding: 20px;
+      background: linear-gradient(135deg, #111827, #1e293b);
+      padding: 30px 20px;
       border-bottom: 1px solid #334155;
     }
 
-    header h1 {
+    h1 {
       margin: 0;
-      font-size: 24px;
+      font-size: 28px;
     }
 
-    header p {
-      margin: 8px 0 0;
+    .subtitle {
       color: #94a3b8;
+      margin-top: 8px;
       font-size: 14px;
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 1200px;
       margin: auto;
-      padding: 20px;
+      padding: 25px 20px;
     }
 
     .status {
-      background: #1e293b;
-      border-radius: 12px;
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-
-    .status h2 {
-      margin-top: 0;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 16px;
-    }
-
-    .card {
-      background: #1e293b;
-      border-radius: 12px;
-      padding: 20px;
+      background: #111827;
       border: 1px solid #334155;
-    }
-
-    .card h3 {
-      margin-top: 0;
-      color: #60a5fa;
-    }
-
-    .score {
-      font-size: 32px;
-      font-weight: bold;
-      color: #22c55e;
-    }
-
-    .watchlist {
-      margin-top: 20px;
-      background: #1e293b;
       border-radius: 12px;
-      padding: 20px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    th, td {
-      padding: 12px;
-      text-align: left;
-      border-bottom: 1px solid #334155;
-    }
-
-    th {
+      padding: 15px;
+      margin-bottom: 25px;
       color: #94a3b8;
     }
 
-    .buy {
-      color: #22c55e;
+    .stocks {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: #111827;
+      border: 1px solid #334155;
+      border-radius: 14px;
+      padding: 20px;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: #64748b;
+    }
+
+    .symbol {
+      font-size: 24px;
       font-weight: bold;
+    }
+
+    .price {
+      font-size: 30px;
+      font-weight: bold;
+      margin: 12px 0;
+    }
+
+    .positive {
+      color: #22c55e;
+    }
+
+    .negative {
+      color: #ef4444;
+    }
+
+    .rating {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: bold;
+      background: #334155;
+      margin-bottom: 15px;
+    }
+
+    .buy {
+      background: #14532d;
+      color: #86efac;
+    }
+
+    .watch {
+      background: #78350f;
+      color: #fde68a;
+    }
+
+    .hold {
+      background: #1e3a8a;
+      color: #93c5fd;
+    }
+
+    .data-row {
+      display: flex;
+      justify-content: space-between;
+      margin: 8px 0;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    .data-row span:last-child {
+      color: #e5e7eb;
+    }
+
+    .reasons {
+      margin-top: 15px;
+      border-top: 1px solid #334155;
+      padding-top: 12px;
+    }
+
+    .reasons-title {
+      font-size: 13px;
+      color: #94a3b8;
+      margin-bottom: 8px;
+    }
+
+    .reason {
+      font-size: 13px;
+      margin: 5px 0;
+      color: #cbd5e1;
     }
 
     footer {
       text-align: center;
       color: #64748b;
       padding: 30px;
-      font-size: 13px;
+      font-size: 12px;
     }
   </style>
 </head>
@@ -115,110 +155,146 @@
 <body>
 
 <header>
-  <h1>📈 AI Swing Trader</h1>
-  <p>AI支援型 米国株スイングトレードシステム</p>
+  <div class="container">
+    <h1>📈 AI Swing Trader</h1>
+    <div class="subtitle">
+      AI-powered Swing Trading Dashboard
+    </div>
+  </div>
 </header>
 
 <div class="container">
 
-  <div class="status">
-    <h2>システムステータス</h2>
-    <p>🟢 システム稼働中</p>
-    <p>監視対象：米国大型株・高流動性成長株</p>
-    <p>AIの役割：情報収集・分析・スコアリング・候補抽出</p>
+  <div class="status" id="status">
+    データを読み込み中...
   </div>
 
-  <div class="grid">
-
-    <div class="card">
-      <h3>監視銘柄数</h3>
-      <div class="score">27</div>
-      <p>現在の監視ユニバース</p>
-    </div>
-
-    <div class="card">
-      <h3>買い候補</h3>
-      <div class="score">3</div>
-      <p>総合スコア75点以上</p>
-    </div>
-
-    <div class="card">
-      <h3>市場環境</h3>
-      <div class="score">BULLISH</div>
-      <p>市場トレンド分析結果</p>
-    </div>
-
-  </div>
-
-  <div class="watchlist">
-
-    <h2>買い候補ランキング</h2>
-
-    <table>
-      <tr>
-        <th>順位</th>
-        <th>銘柄</th>
-        <th>総合スコア</th>
-        <th>評価</th>
-      </tr>
-
-      <tr>
-        <td>1</td>
-        <td>NVDA</td>
-        <td>88</td>
-        <td class="buy">BUY候補</td>
-      </tr>
-
-      <tr>
-        <td>2</td>
-        <td>MSFT</td>
-        <td>82</td>
-        <td class="buy">BUY候補</td>
-      </tr>
-
-      <tr>
-        <td>3</td>
-        <td>AMZN</td>
-        <td>78</td>
-        <td class="buy">BUY候補</td>
-      </tr>
-
-    </table>
-
+  <div class="stocks" id="stocks">
   </div>
 
 </div>
 
 <footer>
-  AI Swing Trader v0.1<br>
-  ※最終的な投資判断は利用者自身が行ってください
+  AI Swing Trader | GitHub Actions Auto Update
 </footer>
 
 <script>
-fetch('data.json')
-  .then(response => response.json())
-  .then(data => {
-    const tbody = document.querySelector('.watchlist tbody');
 
-    tbody.innerHTML = '';
+async function loadData() {
 
-    data.stocks.forEach((stock, index) => {
-      const row = document.createElement('tr');
+  try {
 
-      row.innerHTML = `
-        <td>${index + 1}</td>
-        <td>${stock.symbol}</td>
-        <td>${stock.score}</td>
-        <td class="buy">${stock.rating}</td>
+    const response = await fetch("data.json?" + new Date().getTime());
+
+    const data = await response.json();
+
+    document.getElementById("status").innerHTML =
+      "最終更新： " + data.updated_at +
+      "　｜　Market： " + data.market;
+
+    const container = document.getElementById("stocks");
+
+    container.innerHTML = "";
+
+    data.stocks.forEach(stock => {
+
+      let changeClass =
+        stock.change_percent >= 0
+          ? "positive"
+          : "negative";
+
+      let ratingClass =
+        stock.rating.toLowerCase();
+
+      let reasonsHTML = "";
+
+      stock.reasons.forEach(reason => {
+
+        reasonsHTML +=
+          `<div class="reason">✓ ${reason}</div>`;
+
+      });
+
+      const card = `
+        <div class="card">
+
+          <div class="symbol">
+            ${stock.symbol}
+          </div>
+
+          <div class="price">
+            $${stock.price}
+          </div>
+
+          <div class="${changeClass}">
+            ${stock.change_percent >= 0 ? "+" : ""}
+            ${stock.change_percent}%
+          </div>
+
+          <br>
+
+          <div class="rating ${ratingClass}">
+            ${stock.rating}
+          </div>
+
+          <div class="data-row">
+            <span>5日騰落率</span>
+            <span>${stock.change_5d}%</span>
+          </div>
+
+          <div class="data-row">
+            <span>MA20</span>
+            <span>${stock.ma20}</span>
+          </div>
+
+          <div class="data-row">
+            <span>MA50</span>
+            <span>${stock.ma50}</span>
+          </div>
+
+          <div class="data-row">
+            <span>RSI</span>
+            <span>${stock.rsi}</span>
+          </div>
+
+          <div class="data-row">
+            <span>AI Score</span>
+            <span>${stock.score}</span>
+          </div>
+
+          <div class="reasons">
+
+            <div class="reasons-title">
+              判定理由
+            </div>
+
+            ${reasonsHTML}
+
+          </div>
+
+        </div>
       `;
 
-      tbody.appendChild(row);
+      container.innerHTML += card;
+
     });
-  })
-  .catch(error => {
-    console.error('データ読み込みエラー:', error);
-  });
+
+  }
+
+  catch (error) {
+
+    document.getElementById("status").innerHTML =
+      "データの読み込みに失敗しました";
+
+    console.error(error);
+
+  }
+
+}
+
+loadData();
+
 </script>
-  
+
 </body>
 </html>
