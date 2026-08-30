@@ -1,20 +1,27 @@
 {
+  "updated_at": "2026-08-30 11:58:49",
   "market": "BULLISH",
   "stocks": [
     {
       "symbol": "NVDA",
-      "score": 88,
-      "rating": "BUY候補"
+      "price": 217.55,
+      "change_percent": -4.57,
+      "score": 50,
+      "rating": "HOLD"
     },
     {
       "symbol": "MSFT",
-      "score": 82,
-      "rating": "BUY候補"
+      "price": 513.53,
+      "change_percent": 1.68,
+      "score": 65,
+      "rating": "WATCH"
     },
     {
       "symbol": "AMZN",
-      "score": 78,
-      "rating": "BUY候補"
+      "price": 266.43,
+      "change_percent": 3.97,
+      "score": 75,
+      "rating": "BUY\u5019\u88dc"
     }
   ]
 }
