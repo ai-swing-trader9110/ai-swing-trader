@@ -1,33 +1,30 @@
 {
-  "updated_at": "2026-09-01 00:19:12",
-  "market": "BULLISH",
+  "updated_at": "2026-09-01 22:07:42",
+  "market": "NEUTRAL",
   "stocks": [
     {
       "symbol": "NVDA",
-      "price": 220.78,
-      "change_percent": 1.48,
-      "change_5d": 5.9,
-      "ma20": 218.75,
-      "ma50": 208.62,
-      "rsi": 52.5,
-      "score": 85,
-      "rating": "BUY候補",
+      "price": 217.44,
+      "change_percent": -1.51,
+      "change_5d": 2.06,
+      "ma20": 219.03,
+      "ma50": 208.8,
+      "rsi": 44.6,
+      "score": 35,
+      "rating": "HOLD",
       "reasons": [
-        "株価が20日移動平均線より上",
         "中期トレンドが上向き",
-        "直近5日間で上昇",
-        "RSIが適正な上昇ゾーン",
-        "直近取引日で上昇"
+        "直近5日間で上昇"
       ]
     },
     {
       "symbol": "MSFT",
-      "price": 507.29,
-      "change_percent": -1.22,
-      "change_5d": 4.1,
-      "ma20": 493.78,
-      "ma50": 432.55,
-      "rsi": 52.9,
+      "price": 501.02,
+      "change_percent": -1.24,
+      "change_5d": 1.89,
+      "ma20": 494.23,
+      "ma50": 435.23,
+      "rsi": 56.6,
       "score": 75,
       "rating": "BUY候補",
       "reasons": [
@@ -39,12 +36,12 @@
     },
     {
       "symbol": "AMZN",
-      "price": 259.77,
-      "change_percent": -2.5,
-      "change_5d": -0.88,
-      "ma20": 265.67,
-      "ma50": 251.97,
-      "rsi": 38.1,
+      "price": 254.92,
+      "change_percent": -1.87,
+      "change_5d": -2.35,
+      "ma20": 264.55,
+      "ma50": 252.41,
+      "rsi": 38.2,
       "score": 20,
       "rating": "HOLD",
       "reasons": [
@@ -53,62 +50,63 @@
     },
     {
       "symbol": "AAPL",
-      "price": 316.85,
-      "change_percent": -0.89,
-      "change_5d": 2.1,
-      "ma20": 310.48,
-      "ma50": 312.19,
-      "rsi": 65.1,
-      "score": 55,
+      "price": 325.13,
+      "change_percent": 2.61,
+      "change_5d": 4.91,
+      "ma20": 311.28,
+      "ma50": 312.76,
+      "rsi": 75.4,
+      "score": 60,
       "rating": "WATCH",
       "reasons": [
         "株価が20日移動平均線より上",
         "直近5日間で上昇",
-        "RSIが適正な上昇ゾーン"
+        "直近取引日で上昇",
+        "強い上昇モメンタム"
       ]
     },
     {
       "symbol": "GOOGL",
-      "price": 339.35,
-      "change_percent": -2.09,
-      "change_5d": -2.5,
-      "ma20": 348.56,
-      "ma50": 349.2,
-      "rsi": 44.2,
+      "price": 335.02,
+      "change_percent": -1.28,
+      "change_5d": -3.44,
+      "ma20": 346.43,
+      "ma50": 348.91,
+      "rsi": 39.9,
       "score": 0,
       "rating": "HOLD",
       "reasons": []
     },
     {
       "symbol": "META",
-      "price": 572.34,
-      "change_percent": -0.98,
-      "change_5d": 2.38,
-      "ma20": 574.87,
-      "ma50": 592.05,
-      "rsi": 40.3,
-      "score": 15,
+      "price": 578.54,
+      "change_percent": 1.08,
+      "change_5d": 1.49,
+      "ma20": 574.4,
+      "ma50": 592.34,
+      "rsi": 49.9,
+      "score": 45,
       "rating": "HOLD",
       "reasons": [
-        "直近5日間で上昇"
+        "株価が20日移動平均線より上",
+        "直近5日間で上昇",
+        "直近取引日で上昇"
       ]
     },
     {
       "symbol": "TSLA",
-      "price": 367.95,
-      "change_percent": 5.51,
-      "change_5d": 5.44,
-      "ma20": 341.11,
-      "ma50": 359.82,
-      "rsi": 65.0,
-      "score": 80,
-      "rating": "BUY候補",
+      "price": 356.09,
+      "change_percent": -3.22,
+      "change_5d": 1.67,
+      "ma20": 342.55,
+      "ma50": 358.84,
+      "rsi": 61.5,
+      "score": 55,
+      "rating": "WATCH",
       "reasons": [
         "株価が20日移動平均線より上",
         "直近5日間で上昇",
-        "RSIが適正な上昇ゾーン",
-        "直近取引日で上昇",
-        "強い上昇モメンタム"
+        "RSIが適正な上昇ゾーン"
       ]
     }
   ]
