@@ -54,12 +54,12 @@ for symbol in symbols:
 
         # 約3か月分のデータ取得
         hist = ticker.history(period="3mo")
-
+        
         # 欠損した株価データを除外
-　　　　　close = hist["Close"].dropna()
+        close = hist["Close"].dropna()
 
-　　　　　if len(close) < 60:
-           continue
+        if len(close) < 60:
+            continue
 
         # -------------------------
         # 最新株価
