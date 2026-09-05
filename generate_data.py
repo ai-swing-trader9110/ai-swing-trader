@@ -1,7 +1,7 @@
 import yfinance as yf
 import json
+import math
 from datetime import datetime
-
 
 # =========================
 # 監視する銘柄
@@ -55,16 +55,18 @@ for symbol in symbols:
         # 約3か月分のデータ取得
         hist = ticker.history(period="3mo")
 
-        if len(hist) < 30:
-            continue
+　　　　　# 欠損した株価データを除外
+　　　　　close = hist["Close"].dropna()
 
+　　　　　if len(close) < 60:
+           continue
 
         # -------------------------
         # 最新株価
         # -------------------------
 
-        latest_price = float(hist["Close"].iloc[-1])
-        previous_price = float(hist["Close"].iloc[-2])
+        latest_price = float(close.iloc[-1])
+　　　　　previous_price = float(close.iloc[-2])
 
         change_percent = (
             (latest_price - previous_price)
@@ -77,7 +79,7 @@ for symbol in symbols:
         # 5日騰落率
         # -------------------------
 
-        price_5d_ago = float(hist["Close"].iloc[-6])
+        price_5d_ago = float(close.iloc[-6])
 
         change_5d = (
             (latest_price - price_5d_ago)
@@ -90,15 +92,14 @@ for symbol in symbols:
         # 移動平均
         # -------------------------
 
-        ma20 = hist["Close"].rolling(20).mean().iloc[-1]
-        ma50 = hist["Close"].rolling(50).mean().iloc[-1]
-
+　　　　　ma20 = close.rolling(20).mean().iloc[-1]
+　　　　　ma50 = close.rolling(50).mean().iloc[-1]
 
         # -------------------------
         # RSI
         # -------------------------
 
-        rsi_series = calculate_rsi(hist["Close"])
+        rsi_series = calculate_rsi(close)
 
         rsi = rsi_series.iloc[-1]
 
@@ -312,7 +313,8 @@ with open(
         data,
         f,
         indent=2,
-        ensure_ascii=False
+        ensure_ascii=False,
+　　　　　　allow_nan=False
     )
 
 
