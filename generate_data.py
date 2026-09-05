@@ -295,12 +295,12 @@ with open(
 ) as f:
 
     json.dump(
-        data,
-        f,
-        indent=2,
-        ensure_ascii=False,
-　　　　　　allow_nan=False
-    )
+    data,
+    f,
+    indent=2,
+    ensure_ascii=False,
+    allow_nan=False
+)
 
 
 print("Stock data updated successfully")
