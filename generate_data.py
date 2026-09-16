@@ -281,6 +281,8 @@ data = {
         "%Y-%m-%d %H:%M:%S"
     ),
 
+    "data_date": latest_data_date,
+
     "market": market,
 
     "stocks": stocks
