@@ -1,7 +1,7 @@
 import yfinance as yf
 import json
 import math
-from datetime import datetime
+from datetime import datetime, timezone
 
 # =========================
 # 監視する銘柄
@@ -55,6 +55,9 @@ for symbol in symbols:
 
         # 欠損した株価データを除外
         close = hist["Close"].dropna()
+
+        latest_data_date = hist.index[-1].strftime("%Y-%m-%d")
+        print(f"{symbol} latest data date: {latest_data_date}")
 
         if len(close) < 60:
             continue
