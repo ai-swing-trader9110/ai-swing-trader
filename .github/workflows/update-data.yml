@@ -33,6 +33,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
           git add data.json
           git diff --cached --quiet || git commit -m "Update stock data"
           git push
