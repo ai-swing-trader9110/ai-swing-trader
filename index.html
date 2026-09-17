@@ -50,6 +50,43 @@
       color: #94a3b8;
     }
 
+    .market-indicators {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.market-card {
+    background: #111827;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.market-name {
+    font-size: 14px;
+    color: #94a3b8;
+    font-weight: bold;
+}
+
+.market-price {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.market-label {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+@media (max-width: 600px) {
+    .market-indicators {
+        grid-template-columns: 1fr;
+    }
+}
+
     .stocks {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
