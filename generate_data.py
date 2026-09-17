@@ -14,7 +14,15 @@ symbols = [
     "AAPL",
     "GOOGL",
     "META",
-    "TSLA"
+    "TSLA",
+    "AVGO",
+    "AMD",
+    "NFLX",
+    "PLTR",
+    "CRWD",
+    "SNOW",
+    "SNDK",
+    "NBIS"
 ]
 
 market_symbols = ["SPY", "QQQ", "^VIX"]
