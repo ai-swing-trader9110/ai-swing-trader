@@ -17,6 +17,8 @@ symbols = [
     "TSLA"
 ]
 
+market_symbols = ["SPY", "QQQ", "^VIX"]
+market_data = {}
 
 # =========================
 # RSI計算
@@ -244,6 +246,33 @@ for symbol in symbols:
             f"Error fetching {symbol}: {e}"
         )
 
+for symbol in market_symbols:
+    try:
+        ticker = yf.Ticker(symbol)
+        hist = ticker.history(period="3mo")
+        close = hist["Close"].dropna()
+
+        if len(close) < 2:
+            continue
+
+        latest_price = float(close.iloc[-1])
+        previous_price = float(close.iloc[-2])
+        change_percent = ((latest_price - previous_price) / previous_price * 100)
+
+        market_data[symbol] = {
+            "price": round(latest_price, 2),
+            "change_percent": round(change_percent, 2),
+            "latest_data_date": str(close.index[-1].date())
+        }
+
+        print(
+            f"{symbol} latest data date: "
+            f"{close.index[-1].date()} "
+            f"change={change_percent:.2f}%"
+        )
+
+    except Exception as e:
+        print(f"Error fetching market data {symbol}: {e}")
 
 # =========================
 # 市場環境
@@ -284,6 +313,8 @@ data = {
     "data_date": latest_data_date,
 
     "market": market,
+
+    "market_data": market_data,
 
     "stocks": stocks
 
