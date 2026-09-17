@@ -286,19 +286,24 @@ buy_candidates = len(
     ]
 )
 
+# 市場環境を判定
+spy_change = market_data["SPY"]["change_percent"]
+qqq_change = market_data["QQQ"]["change_percent"]
+vix_change = market_data["^VIX"]["change_percent"]
+vix_price = market_data["^VIX"]["price"]
 
-if buy_candidates >= 3:
-
+if vix_price >= 30:
+    market = "STRONG_WARNING"
+elif vix_price >= 20:
+    market = "WARNING"
+elif spy_change < 0 and qqq_change < 0 and vix_change > 0:
+    market = "WARNING"
+elif buy_candidates >= 3:
     market = "BULLISH"
-
 elif buy_candidates >= 1:
-
     market = "NEUTRAL"
-
 else:
-
     market = "BEARISH"
-
 
 # =========================
 # JSON作成
