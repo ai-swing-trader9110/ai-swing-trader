@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17 06:31:40",
+  "updated_at": "2026-09-17 11:45:00",
   "data_date": "2026-09-16",
   "market": "NEUTRAL",
   "market_data": {
@@ -14,9 +14,9 @@
       "latest_data_date": "2026-09-16"
     },
     "^VIX": {
-      "price": 17.71,
-      "change_percent": 2.97,
-      "latest_data_date": "2026-09-16"
+      "price": 15.94,
+      "change_percent": -9.99,
+      "latest_data_date": "2026-09-17"
     }
   },
   "stocks": [
