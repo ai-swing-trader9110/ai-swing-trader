@@ -181,7 +181,7 @@ for symbol in symbols:
         # 判定
         # =========================
 
-        if score >= 70:
+        if score >= 75:
 
             rating = "BUY候補"
 
