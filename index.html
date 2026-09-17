@@ -195,6 +195,37 @@ async function loadData() {
       "最終更新： " + data.updated_at +
       "　｜　Market： " + data.market;
 
+    const marketData = data.market_data;
+
+document.getElementById("market-indicators").innerHTML = `
+    <div class="market-card">
+        <div class="market-name">SPY</div>
+        <div class="market-price">${marketData.SPY.price}</div>
+        <div class="${marketData.SPY.change_percent >= 0 ? "positive" : "negative"}">
+            ${marketData.SPY.change_percent >= 0 ? "+" : ""}
+            ${marketData.SPY.change_percent}%
+        </div>
+    </div>
+
+    <div class="market-card">
+        <div class="market-name">QQQ</div>
+        <div class="market-price">${marketData.QQQ.price}</div>
+        <div class="${marketData.QQQ.change_percent >= 0 ? "positive" : "negative"}">
+            ${marketData.QQQ.change_percent >= 0 ? "+" : ""}
+            ${marketData.QQQ.change_percent}%
+        </div>
+    </div>
+
+    <div class="market-card">
+        <div class="market-name">VIX</div>
+        <div class="market-price">${marketData["^VIX"].price}</div>
+        <div class="${marketData["^VIX"].change_percent >= 0 ? "positive" : "negative"}">
+            ${marketData["^VIX"].change_percent >= 0 ? "+" : ""}
+            ${marketData["^VIX"].change_percent}%
+        </div>
+    </div>
+`;
+
     const container = document.getElementById("stocks");
 
     container.innerHTML = "";
