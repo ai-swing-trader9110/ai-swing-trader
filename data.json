@@ -1,48 +1,63 @@
 {
-  "updated_at": "2026-09-17 00:16:06",
+  "updated_at": "2026-09-17 06:31:40",
   "data_date": "2026-09-16",
   "market": "NEUTRAL",
+  "market_data": {
+    "SPY": {
+      "price": 754.05,
+      "change_percent": -0.44,
+      "latest_data_date": "2026-09-16"
+    },
+    "QQQ": {
+      "price": 704.72,
+      "change_percent": 0.03,
+      "latest_data_date": "2026-09-16"
+    },
+    "^VIX": {
+      "price": 17.71,
+      "change_percent": 2.97,
+      "latest_data_date": "2026-09-16"
+    }
+  },
   "stocks": [
     {
       "symbol": "NVDA",
-      "price": 212.17,
-      "change_percent": 0.57,
-      "change_5d": -5.9,
-      "ma20": 218.61,
-      "ma50": 213.02,
-      "rsi": 49.6,
-      "score": 30,
-      "rating": "HOLD",
+      "price": 213.9,
+      "change_percent": 0.82,
+      "change_5d": -4.26,
+      "ma20": 218.33,
+      "ma50": 213.36,
+      "rsi": 53.2,
+      "score": 50,
+      "rating": "WATCH",
       "reasons": [
         "中期トレンドが上向き",
+        "RSIが適正な上昇ゾーン",
         "直近取引日で上昇"
       ]
     },
     {
       "symbol": "MSFT",
-      "price": 497.12,
-      "change_percent": -1.64,
-      "change_5d": 0.64,
-      "ma20": 495.68,
-      "ma50": 457.65,
-      "rsi": 52.9,
-      "score": 75,
-      "rating": "BUY候補",
+      "price": 490.3,
+      "change_percent": -1.37,
+      "change_5d": -0.27,
+      "ma20": 496.16,
+      "ma50": 459.69,
+      "rsi": 46.8,
+      "score": 20,
+      "rating": "HOLD",
       "reasons": [
-        "株価が20日移動平均線より上",
-        "中期トレンドが上向き",
-        "直近5日間で上昇",
-        "RSIが適正な上昇ゾーン"
+        "中期トレンドが上向き"
       ]
     },
     {
       "symbol": "AMZN",
-      "price": 248.42,
-      "change_percent": -2.02,
-      "change_5d": -3.33,
-      "ma20": 257.86,
-      "ma50": 255.56,
-      "rsi": 37.5,
+      "price": 245.96,
+      "change_percent": -0.99,
+      "change_5d": -2.55,
+      "ma20": 257.19,
+      "ma50": 255.55,
+      "rsi": 36.3,
       "score": 20,
       "rating": "HOLD",
       "reasons": [
@@ -51,44 +66,46 @@
     },
     {
       "symbol": "AAPL",
-      "price": 331.34,
-      "change_percent": -0.52,
-      "change_5d": 4.78,
-      "ma20": 319.27,
-      "ma50": 318.7,
-      "rsi": 68.9,
-      "score": 75,
+      "price": 332.41,
+      "change_percent": 0.32,
+      "change_5d": 5.41,
+      "ma20": 320.39,
+      "ma50": 319.14,
+      "rsi": 67.5,
+      "score": 85,
       "rating": "BUY候補",
       "reasons": [
         "株価が20日移動平均線より上",
         "中期トレンドが上向き",
         "直近5日間で上昇",
-        "RSIが適正な上昇ゾーン"
+        "RSIが適正な上昇ゾーン",
+        "直近取引日で上昇"
       ]
     },
     {
       "symbol": "GOOGL",
-      "price": 344.98,
-      "change_percent": -1.26,
-      "change_5d": 1.96,
-      "ma20": 341.14,
-      "ma50": 346.35,
-      "rsi": 48.7,
-      "score": 35,
-      "rating": "HOLD",
+      "price": 342.87,
+      "change_percent": -0.61,
+      "change_5d": 3.7,
+      "ma20": 341.08,
+      "ma50": 345.87,
+      "rsi": 50.9,
+      "score": 55,
+      "rating": "WATCH",
       "reasons": [
         "株価が20日移動平均線より上",
-        "直近5日間で上昇"
+        "直近5日間で上昇",
+        "RSIが適正な上昇ゾーン"
       ]
     },
     {
       "symbol": "META",
-      "price": 670.24,
-      "change_percent": 0.7,
-      "change_5d": 9.25,
-      "ma20": 595.32,
-      "ma50": 603.96,
-      "rsi": 84.1,
+      "price": 673.31,
+      "change_percent": 0.46,
+      "change_5d": 3.0,
+      "ma20": 601.8,
+      "ma50": 605.11,
+      "rsi": 83.8,
       "score": 45,
       "rating": "HOLD",
       "reasons": [
@@ -99,17 +116,19 @@
     },
     {
       "symbol": "TSLA",
-      "price": 356.58,
-      "change_percent": -0.67,
-      "change_5d": -3.15,
-      "ma20": 356.83,
-      "ma50": 352.54,
-      "rsi": 52.6,
-      "score": 40,
-      "rating": "HOLD",
+      "price": 358.08,
+      "change_percent": 0.42,
+      "change_5d": -2.65,
+      "ma20": 357.89,
+      "ma50": 351.65,
+      "rsi": 55.1,
+      "score": 70,
+      "rating": "BUY候補",
       "reasons": [
+        "株価が20日移動平均線より上",
         "中期トレンドが上向き",
-        "RSIが適正な上昇ゾーン"
+        "RSIが適正な上昇ゾーン",
+        "直近取引日で上昇"
       ]
     }
   ]
