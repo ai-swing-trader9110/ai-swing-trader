@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-21 00:17:08",
-  "data_date": "2026-09-18",
+  "updated_at": "2026-09-22 00:16:39",
+  "data_date": "2026-09-21",
   "market": "BULLISH",
   "market_data": {
     "SPY": {
@@ -14,9 +14,9 @@
       "latest_data_date": "2026-09-18"
     },
     "^VIX": {
-      "price": 14.81,
-      "change_percent": -4.08,
-      "latest_data_date": "2026-09-18"
+      "price": 14.87,
+      "change_percent": 0.41,
+      "latest_data_date": "2026-09-21"
     }
   },
   "stocks": [
