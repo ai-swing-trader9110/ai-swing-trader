@@ -347,7 +347,7 @@ data = {
         "%Y-%m-%d %H:%M:%S"
     ),
 
-    "data_date": latest_data_date,
+    "data_date": str(latest_data_date),
 
     "market": market,
 
