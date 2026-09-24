@@ -66,8 +66,19 @@ for symbol in symbols:
         # 欠損した株価データを除外
         close = hist["Close"].dropna()
 
-        latest_data_date = hist.index[-1].strftime("%Y-%m-%d")
+        latest_data_date = hist.index[-1].date()
         print(f"{symbol} latest data date: {latest_data_date}")
+
+        today = datetime.now().date()
+
+        if today.weekday() == 0:
+            expected_latest_date = today - timedelta(days=3)
+        else:
+            expected_latest_date = today - timedelta(days=1)
+
+        if latest_data_date < expected_latest_date:
+            print(f"{symbol} data is stale: {latest_data_date}")
+            continue
 
         if len(close) < 60:
             continue
@@ -264,6 +275,17 @@ for symbol in market_symbols:
             continue
 
         latest_data_date = close.index[-1].date()
+
+        today = datetime.now().date()
+
+        if today.weekday() == 0:
+            expected_latest_date = today - timedelta(days=3)
+        else:
+            expected_latest_date = today - timedelta(days=1)
+
+        if latest_data_date < expected_latest_date:
+            print(f"{symbol} data is stale: {latest_data_date}")
+            continue
 
         latest_price = float(close.iloc[-1])
         previous_price = float(close.iloc[-2])
