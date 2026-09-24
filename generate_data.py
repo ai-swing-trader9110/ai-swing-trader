@@ -1,7 +1,7 @@
 import yfinance as yf
 import json
 import math
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 # =========================
 # 監視する銘柄
@@ -262,6 +262,8 @@ for symbol in market_symbols:
 
         if len(close) < 2:
             continue
+
+        latest_data_date = close.index[-1].date()
 
         latest_price = float(close.iloc[-1])
         previous_price = float(close.iloc[-2])
