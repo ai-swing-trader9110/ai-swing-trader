@@ -319,8 +319,8 @@ buy_candidates = len(
 )
 
 # 市場環境を判定
-spy_change = market_data["SPY"]["change_percent"]
-qqq_change = market_data["QQQ"]["change_percent"]
+spy_change = market_data.get("SPY", {}).get("change_percent", 0)
+qqq_change = market_data.get("QQQ", {}).get("change_percent", 0)
 vix_change = market_data["^VIX"]["change_percent"]
 vix_price = market_data["^VIX"]["price"]
 
