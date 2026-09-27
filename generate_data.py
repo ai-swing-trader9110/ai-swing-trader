@@ -296,6 +296,10 @@ for symbol in market_symbols:
 
         if today.weekday() == 0:
             expected_latest_date = today - timedelta(days=3)
+        elif today.weekday() == 5:
+            expected_latest_date = today - timedelta(days=1)
+        elif today.weekday() == 6:
+            expected_latest_date = today - timedelta(days=2)
         else:
             expected_latest_date = today - timedelta(days=1)
 
