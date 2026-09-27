@@ -162,7 +162,23 @@ for symbol in symbols:
             score += 20
 
             reasons.append(
-                "RSIが適正な上昇ゾーン"
+            "RSIが適正な上昇ゾーン"
+            )
+
+        elif 70 < rsi < 80:
+
+            score += 5
+
+            reasons.append(
+            "RSIがやや高め"
+            )
+
+        elif rsi >= 80:
+
+            score -= 10
+
+            reasons.append(
+            "RSIが高く過熱気味"
             )
 
 
