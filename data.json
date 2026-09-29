@@ -1,22 +1,12 @@
 {
-  "updated_at": "2026-09-28 00:18:55",
-  "data_date": "2026-09-25",
+  "updated_at": "2026-09-29 00:17:57",
+  "data_date": "2026-09-28",
   "market": "BULLISH",
   "market_data": {
-    "SPY": {
-      "price": 771.35,
-      "change_percent": 0.54,
-      "latest_data_date": "2026-09-25"
-    },
-    "QQQ": {
-      "price": 744.5,
-      "change_percent": 0.46,
-      "latest_data_date": "2026-09-25"
-    },
     "^VIX": {
-      "price": 14.87,
-      "change_percent": -5.11,
-      "latest_data_date": "2026-09-25"
+      "price": 16.07,
+      "change_percent": 8.07,
+      "latest_data_date": "2026-09-28"
     }
   },
   "stocks": [
