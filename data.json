@@ -1,93 +1,102 @@
 {
-  "updated_at": "2026-11-09 05:03:17",
-  "data_date": "2026-11-06",
-  "market": "WARNING",
+  "updated_at": "2026-11-10 06:20:36",
+  "data_date": "2026-11-09",
+  "market": "BULLISH",
   "market_data": {
     "SPY": {
-      "price": 735.29,
-      "change_percent": 0.31,
-      "latest_data_date": "2026-11-06"
+      "price": 752.69,
+      "change_percent": 2.37,
+      "latest_data_date": "2026-11-09"
     },
     "QQQ": {
-      "price": 656.1,
-      "change_percent": 1.4,
-      "latest_data_date": "2026-11-06"
+      "price": 679.35,
+      "change_percent": 3.54,
+      "latest_data_date": "2026-11-09"
     },
     "^VIX": {
-      "price": 25.64,
-      "change_percent": -9.01,
-      "latest_data_date": "2026-11-06"
+      "price": 19.92,
+      "change_percent": -22.31,
+      "latest_data_date": "2026-11-09"
     }
   },
   "stocks": [
     {
       "symbol": "NVDA",
-      "price": 186.64,
-      "change_percent": 2.78,
-      "change_5d": -8.8,
-      "ma20": 211.55,
-      "ma50": 219.77,
-      "rsi": 29.6,
-      "score": 25,
+      "price": 178.67,
+      "change_percent": -4.27,
+      "change_5d": -11.58,
+      "ma20": 209.16,
+      "ma50": 219.0,
+      "rsi": 27.0,
+      "score": 0,
       "rating": "HOLD",
+      "reasons": []
+    },
+    {
+      "symbol": "MSFT",
+      "price": 545.18,
+      "change_percent": 2.75,
+      "change_5d": 7.51,
+      "ma20": 531.61,
+      "ma50": 517.28,
+      "rsi": 54.8,
+      "score": 100,
+      "rating": "BUY候補",
       "reasons": [
+        "株価が20日移動平均線より上",
+        "中期トレンドが上向き",
+        "直近5日間で上昇",
+        "RSIが適正な上昇ゾーン",
         "直近取引日で上昇",
         "強い上昇モメンタム"
       ]
     },
     {
-      "symbol": "MSFT",
-      "price": 530.61,
-      "change_percent": -0.99,
-      "change_5d": 1.67,
-      "ma20": 531.41,
-      "ma50": 516.65,
-      "rsi": 48.8,
-      "score": 35,
-      "rating": "HOLD",
-      "reasons": [
-        "中期トレンドが上向き",
-        "直近5日間で上昇"
-      ]
-    },
-    {
       "symbol": "AMZN",
-      "price": 259.3,
-      "change_percent": -0.35,
-      "change_5d": 7.88,
-      "ma20": 254.28,
-      "ma50": 253.95,
-      "rsi": 47.7,
-      "score": 55,
-      "rating": "WATCH",
+      "price": 266.93,
+      "change_percent": 2.94,
+      "change_5d": 8.67,
+      "ma20": 254.65,
+      "ma50": 253.96,
+      "rsi": 52.8,
+      "score": 100,
+      "rating": "BUY候補",
       "reasons": [
         "株価が20日移動平均線より上",
         "中期トレンドが上向き",
-        "直近5日間で上昇"
+        "直近5日間で上昇",
+        "RSIが適正な上昇ゾーン",
+        "直近取引日で上昇",
+        "強い上昇モメンタム"
       ]
     },
     {
       "symbol": "AAPL",
-      "price": 342.37,
-      "change_percent": -0.52,
-      "change_5d": -0.66,
-      "ma20": 343.38,
-      "ma50": 336.01,
-      "rsi": 49.6,
-      "score": 20,
-      "rating": "HOLD",
+      "price": 350.69,
+      "change_percent": 2.43,
+      "change_5d": 3.66,
+      "ma20": 343.87,
+      "ma50": 336.63,
+      "rsi": 57.5,
+      "score": 100,
+      "rating": "BUY候補",
       "reasons": [
-        "中期トレンドが上向き"
+        "株価が20日移動平均線より上",
+        "中期トレンドが上向き",
+        "直近5日間で上昇",
+        "RSIが適正な上昇ゾーン",
+        "直近取引日で上昇",
+        "強い上昇モメンタム"
       ]
     },
     {
       "symbol": "GOOGL",
-      "price": 284.78,
-      "change_percent": 0.78,
-      "change_5d": 1.77,
-      "ma20": 317.44,
-      "ma50": 332.91,
-      "rsi": 20.3,
+      "price": 288.15,
+      "change_percent": 1.18,
+      "change_5d": 3.28,
+      "ma20": 314.21,
+      "ma50": 331.74,
+      "rsi": 23.8,
       "score": 25,
       "rating": "HOLD",
       "reasons": [
@@ -97,56 +106,45 @@
     },
     {
       "symbol": "META",
-      "price": 610.15,
-      "change_percent": 0.84,
-      "change_5d": -0.79,
-      "ma20": 662.67,
-      "ma50": 674.77,
-      "rsi": 23.9,
-      "score": 10,
+      "price": 641.37,
+      "change_percent": 5.12,
+      "change_5d": 5.71,
+      "ma20": 657.59,
+      "ma50": 676.05,
+      "rsi": 36.9,
+      "score": 40,
       "rating": "HOLD",
       "reasons": [
-        "直近取引日で上昇"
+        "直近5日間で上昇",
+        "直近取引日で上昇",
+        "強い上昇モメンタム"
       ]
     },
     {
       "symbol": "TSLA",
-      "price": 358.22,
-      "change_percent": 4.23,
-      "change_5d": -10.4,
+      "price": 378.05,
+      "change_percent": 5.54,
+      "change_5d": -6.38,
       "ma20": 380.42,
-      "ma50": 372.14,
-      "rsi": 46.8,
-      "score": 45,
-      "rating": "HOLD",
+      "ma50": 372.72,
+      "rsi": 51.3,
+      "score": 65,
+      "rating": "WATCH",
       "reasons": [
         "中期トレンドが上向き",
+        "RSIが適正な上昇ゾーン",
         "直近取引日で上昇",
         "強い上昇モメンタム"
       ]
     },
     {
       "symbol": "AVGO",
-      "price": 293.69,
-      "change_percent": 0.74,
-      "change_5d": -9.93,
-      "ma20": 332.12,
-      "ma50": 347.69,
-      "rsi": 34.5,
-      "score": 10,
-      "rating": "HOLD",
-      "reasons": [
-        "直近取引日で上昇"
-      ]
-    },
-    {
-      "symbol": "AMD",
-      "price": 449.04,
-      "change_percent": 11.04,
-      "change_5d": -11.05,
-      "ma20": 527.3,
-      "ma50": 546.81,
-      "rsi": 38.9,
+      "price": 319.48,
+      "change_percent": 8.78,
+      "change_5d": -0.85,
+      "ma20": 330.36,
+      "ma50": 346.72,
+      "rsi": 45.3,
       "score": 25,
       "rating": "HOLD",
       "reasons": [
@@ -155,27 +153,44 @@
       ]
     },
     {
-      "symbol": "NFLX",
-      "price": 63.41,
-      "change_percent": -3.28,
-      "change_5d": 2.14,
-      "ma20": 66.25,
-      "ma50": 71.03,
-      "rsi": 33.3,
-      "score": 15,
+      "symbol": "AMD",
+      "price": 508.58,
+      "change_percent": 13.26,
+      "change_5d": 8.94,
+      "ma20": 523.01,
+      "ma50": 547.67,
+      "rsi": 47.1,
+      "score": 40,
       "rating": "HOLD",
       "reasons": [
-        "直近5日間で上昇"
+        "直近5日間で上昇",
+        "直近取引日で上昇",
+        "強い上昇モメンタム"
+      ]
+    },
+    {
+      "symbol": "NFLX",
+      "price": 63.95,
+      "change_percent": 0.85,
+      "change_5d": 2.58,
+      "ma20": 65.91,
+      "ma50": 70.68,
+      "rsi": 37.3,
+      "score": 25,
+      "rating": "HOLD",
+      "reasons": [
+        "直近5日間で上昇",
+        "直近取引日で上昇"
       ]
     },
     {
       "symbol": "PLTR",
-      "price": 160.38,
-      "change_percent": 3.48,
-      "change_5d": -12.89,
-      "ma20": 190.11,
-      "ma50": 185.88,
-      "rsi": 25.2,
+      "price": 169.2,
+      "change_percent": 5.5,
+      "change_5d": -5.13,
+      "ma20": 188.12,
+      "ma50": 185.54,
+      "rsi": 34.5,
       "score": 45,
       "rating": "HOLD",
       "reasons": [
@@ -186,41 +201,44 @@
     },
     {
       "symbol": "CRWD",
-      "price": 216.9,
-      "change_percent": -0.14,
-      "change_5d": -13.39,
-      "ma20": 245.27,
-      "ma50": 243.78,
-      "rsi": 44.5,
-      "score": 20,
+      "price": 228.58,
+      "change_percent": 5.38,
+      "change_5d": -5.47,
+      "ma20": 243.55,
+      "ma50": 243.98,
+      "rsi": 50.5,
+      "score": 45,
       "rating": "HOLD",
       "reasons": [
-        "中期トレンドが上向き"
+        "RSIが適正な上昇ゾーン",
+        "直近取引日で上昇",
+        "強い上昇モメンタム"
       ]
     },
     {
       "symbol": "SNOW",
-      "price": 275.88,
-      "change_percent": 2.35,
-      "change_5d": -9.87,
-      "ma20": 318.13,
-      "ma50": 328.12,
-      "rsi": 34.5,
-      "score": 25,
+      "price": 291.14,
+      "change_percent": 5.53,
+      "change_5d": 0.16,
+      "ma20": 314.67,
+      "ma50": 327.38,
+      "rsi": 39.7,
+      "score": 40,
       "rating": "HOLD",
       "reasons": [
+        "直近5日間で上昇",
         "直近取引日で上昇",
         "強い上昇モメンタム"
       ]
     },
     {
       "symbol": "SNDK",
-      "price": 835.06,
-      "change_percent": 3.55,
-      "change_5d": -27.44,
-      "ma20": 1250.37,
-      "ma50": 1504.43,
-      "rsi": 24.6,
+      "price": 886.51,
+      "change_percent": 6.16,
+      "change_5d": -17.54,
+      "ma20": 1220.33,
+      "ma50": 1492.47,
+      "rsi": 28.3,
       "score": 25,
       "rating": "HOLD",
       "reasons": [
@@ -230,15 +248,16 @@
     },
     {
       "symbol": "NBIS",
-      "price": 129.49,
-      "change_percent": 7.58,
-      "change_5d": -15.99,
-      "ma20": 165.23,
-      "ma50": 201.7,
-      "rsi": 35.5,
-      "score": 25,
+      "price": 141.45,
+      "change_percent": 9.24,
+      "change_5d": 0.04,
+      "ma20": 161.8,
+      "ma50": 200.35,
+      "rsi": 40.1,
+      "score": 40,
       "rating": "HOLD",
       "reasons": [
+        "直近5日間で上昇",
         "直近取引日で上昇",
         "強い上昇モメンタム"
       ]
